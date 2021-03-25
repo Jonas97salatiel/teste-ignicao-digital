@@ -1,38 +1,176 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../src/Fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #F9F9F9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-vertical-section{
+  width:16%;
+  height: 100%;
+  display: block;
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.menu-vertical{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+/* Brand */
+
+.menu-vertical-logo{
+  width: 75%;
+  margin: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dashboard */
+
+.area-selection{
+  width: 80%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EBEBEB;
+  padding: 0 .5em;
+  border-radius: 4px;
+  
+}
+
+.area-selection div{
+  display: flex;
+  align-items: center;
+  
+}
+
+.area-selection-home{
+  width: 13px;
+  
+}
+
+.area-selection div h3{
+  
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 5px;
+  font-family: Montserrat;
+  
+}
+
+/* Apps */
+.menu-vertical-apps{
+
+  width: 80%;
+  margin-top: 50px;
+}
+
+.menu-vertical-apps-title{
+  font-size: 14px;
+  color: #999999;
+  font-weight: 700;
+  font-family: Montserrat;
+  margin-bottom: 10px;
+}
+
+.list-apps {
+  padding: 0 !important;
+  margin: 0;
+
+}
+
+.list-apps li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+}
+
+.list-apps li h5{
+
+  font-family: Montserrat;
+  padding-left: .5em;
+  font-weight: 500;
+
+}
+
+/*dashboard*/
+.dashboard{
+
+  float: left;
+  width:84%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.dashboard-navbar{
+
+  margin: 0 auto;
+  width: 94%;
+  height: 62px;
+  display: flex;
+  background-color: #FFF;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.dashboard-navbar-icons{
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: .5em;
+}
+
+.dashboard-navbar-infos{
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard-navbar-infos-user{
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-navbar-infos-user div{
+  height: 100%;
+
+}
+
+.dashboard-navbar-infos-user div h3{
+  margin: 0;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.dashboard-navbar-infos-user div h5{
+  font-family: Montserrat;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 300;
 }
