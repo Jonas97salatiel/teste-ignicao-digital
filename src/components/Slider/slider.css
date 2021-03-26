@@ -1,0 +1,72 @@
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../../../src/Fonts/Montserrat-Regular.ttf);
+  }
+
+.rc-slider-track{
+    background-color: #606060;
+    height: 6px;
+}
+
+.rc-slider-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    margin-top: -8px;
+    cursor: grab;
+    border-radius: 50%;
+    border: solid 2px #606060;
+    background-color: #606060;
+    touch-action: pan-x;
+}
+
+.rc-slider-handle:hover{
+    background-color: #606060;
+}
+
+.rc-slider-handle:active{
+    background-color: #606060;
+    border-color: #606060;
+    box-shadow: 0 0 5px #606060;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging{
+    border-color: #606060;
+    box-shadow: 0 0 5px #606060;
+}
+
+.rc-slider-tooltip-inner {
+    width: 60px;
+   font-size: 12px;
+   font-family: Montserrat;
+}
+
+.values-slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.values-slider-title{
+    padding-top: .7em;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #2C2C2C;
+}
+
+.slider-valores-div{
+    width: 90%;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #979797;
+    margin: 0 auto;
+}
+
+
+
